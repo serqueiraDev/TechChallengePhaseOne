@@ -8,7 +8,19 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechChallengePhaseOne.Application\TechChallengePhaseOne.Application.csproj" />
+    <ProjectReference Include="..\TechChallengePhaseOne.CrossCutting\TechChallengePhaseOne.CrossCutting.csproj" />
+    <ProjectReference Include="..\TechChallengePhaseOne.Data\TechChallengePhaseOne.Data.csproj" />
   </ItemGroup>
 
 </Project>

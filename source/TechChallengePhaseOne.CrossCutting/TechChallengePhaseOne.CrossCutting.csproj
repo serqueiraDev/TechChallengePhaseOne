@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechChallengePhaseOne.Application\TechChallengePhaseOne.Application.csproj" />
+    <ProjectReference Include="..\TechChallengePhaseOne.Data\TechChallengePhaseOne.Data.csproj" />
+    <ProjectReference Include="..\TechChallengePhaseOne.Domain.Service\TechChallengePhaseOne.Domain.Service.csproj" />
+    <ProjectReference Include="..\TechChallengePhaseOne.Domain\TechChallengePhaseOne.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
